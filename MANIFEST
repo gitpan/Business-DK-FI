@@ -1,14 +1,12 @@
 Build.PL
 Changes
-Debian_CPANTS.txt
-examples/generate.pl
-examples/stringification.pl
 INSTALL
 lib/Business/DK/FI.pm
 lib/Class/Business/DK/FI.pm
 lib/Data/FormValidator/Constraints/Business/DK/FI.pm
 Makefile.PL
 MANIFEST			This list of files
+META.json
 META.yml
 README
 t/00.load.t
@@ -25,4 +23,3 @@ t/pod-coverage.t
 t/pod.t
 t/prerequisites.t
 TODO
-META.json

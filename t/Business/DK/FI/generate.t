@@ -1,8 +1,8 @@
-# $Id: generate.t 7539 2011-03-20 17:18:16Z jonasbn $
+# $Id: generate.t 7812 2011-11-23 08:02:38Z jonasbn $
 
 use strict;
 use warnings;
-use Test::More tests => 7;
+use Test::More tests => 8;
 use Test::Exception;
 
 #Test 1
@@ -14,6 +14,8 @@ ok(validate(generate(1)), 'Ok');
 ok(validate(generate(12345678901234)), 'Ok');
 
 ok(validate(generate(99999999999999)), 'Ok');
+
+dies_ok { validate(generate(-1)) } 'Invalid value';
 
 dies_ok { validate(generate(0)) } 'too long, 15'; 
 
