@@ -38,7 +38,7 @@
    "provides" : {
       "Business::DK::FI" : {
          "file" : "lib/Business/DK/FI.pm",
-         "version" : "0.03"
+         "version" : "0.04"
       },
       "Class::Business::DK::FI" : {
          "file" : "lib/Class/Business/DK/FI.pm",
@@ -65,5 +65,5 @@
       "x_ProjectSite" : "http://logicLAB.jira.com/browse/BDKFI",
       "x_ProjectWiki" : "http://logiclab.jira.com/wiki/display/BDKFI/Home"
    },
-   "version" : "0.03"
+   "version" : "0.04"
 }

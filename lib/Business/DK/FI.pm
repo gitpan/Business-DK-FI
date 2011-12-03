@@ -1,6 +1,6 @@
 package Business::DK::FI;
 
-# $Id: FI.pm 7813 2011-11-23 08:03:06Z jonasbn $
+# $Id: FI.pm 7819 2011-12-03 13:50:10Z jonasbn $
 
 use strict;
 use warnings;
@@ -10,7 +10,7 @@ use Readonly;
 use base qw(Exporter);
 use English qw( -no_match_vars );
 
-$VERSION   = '0.03';
+$VERSION   = '0.04';
 @EXPORT_OK = qw(validate validateFI generate);
 
 use constant MODULUS_OPERAND => 10;
@@ -97,7 +97,7 @@ sub generate {
     );
 
     #padding with zeroes up to our maximum length
-    my $pattern = '%0' . $CONTROL_LENGTH . 'd';
+    my $pattern = '%0' . $CONTROL_LENGTH . 's';
     my $reformatted_number = sprintf $pattern, $number;
 
     #this call takes care of the check of the product of the above statement
