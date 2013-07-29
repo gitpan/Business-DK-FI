@@ -4,7 +4,7 @@
       "Jonas B. Nielsen, (jonasbn) <jonasbn@cpan.org>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.38, CPAN::Meta::Converter version 2.110930001",
+   "generated_by" : "Module::Build version 0.4005, CPAN::Meta::Converter version 2.131560",
    "license" : [
       "artistic_1"
    ],
@@ -16,29 +16,29 @@
    "prereqs" : {
       "build" : {
          "requires" : {
-            "Test::Exception" : 0
+            "Test::Exception" : "0"
          }
       },
       "configure" : {
          "requires" : {
-            "Module::Build" : "0.38"
+            "Module::Build" : "0.40"
          }
       },
       "runtime" : {
          "requires" : {
-            "Carp" : 0,
-            "Class::InsideOut" : 0,
-            "Exporter" : 0,
-            "Params::Validate" : 0,
-            "Readonly" : 0,
-            "Try::Tiny" : 0
+            "Carp" : "0",
+            "Class::InsideOut" : "0",
+            "Exporter" : "0",
+            "Params::Validate" : "0",
+            "Readonly" : "0",
+            "Try::Tiny" : "0"
          }
       }
    },
    "provides" : {
       "Business::DK::FI" : {
          "file" : "lib/Business/DK/FI.pm",
-         "version" : "0.04"
+         "version" : "0.05"
       },
       "Class::Business::DK::FI" : {
          "file" : "lib/Class/Business/DK/FI.pm",
@@ -65,5 +65,5 @@
       "x_ProjectSite" : "http://logicLAB.jira.com/browse/BDKFI",
       "x_ProjectWiki" : "http://logiclab.jira.com/wiki/display/BDKFI/Home"
    },
-   "version" : "0.04"
+   "version" : "0.05"
 }
