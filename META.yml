@@ -16,7 +16,7 @@ name: Business-DK-FI
 provides:
   Business::DK::FI:
     file: lib/Business/DK/FI.pm
-    version: 0.05
+    version: 0.06
   Class::Business::DK::FI:
     file: lib/Class/Business/DK/FI.pm
     version: 0.01
@@ -38,4 +38,4 @@ resources:
   homepage: http://logiclab.jira.com/wiki/display/BDKFI/Home
   license: http://www.perlfoundation.org/artistic_license_1_0
   repository: http://logicLAB.jira.com/svn/BDKFI
-version: 0.05
+version: 0.06

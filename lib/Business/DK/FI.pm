@@ -1,6 +1,6 @@
 package Business::DK::FI;
 
-# $Id: FI.pm 7819 2011-12-03 13:50:10Z jonasbn $
+# $Id: FI.pm 8172 2013-07-31 16:45:55Z jonasbn $
 
 use strict;
 use warnings;
@@ -10,7 +10,7 @@ use Readonly;
 use base qw(Exporter);
 use English qw( -no_match_vars );
 
-$VERSION   = '0.05';
+$VERSION   = '0.06';
 @EXPORT_OK = qw(validate validateFI generate);
 
 use constant MODULUS_OPERAND => 10;
@@ -19,8 +19,8 @@ use constant DEDUCTION       => 9;
 use constant INVALID         => 0;
 use constant VALID           => 1;
 
-Readonly my @CONTROLCIFERS  => qw(1 2 1 2 1 2 1 2 1 2 1 2 1 2);
-Readonly my $CONTROL_LENGTH => scalar @CONTROLCIFERS;
+Readonly::Array my @CONTROLCIFERS  => qw(1 2 1 2 1 2 1 2 1 2 1 2 1 2);
+Readonly::Scalar my $CONTROL_LENGTH => scalar @CONTROLCIFERS;
 
 ## no critic (NamingConventions::Capitalization)
 
