@@ -1,4 +1,4 @@
-# $Id: validate.t 7465 2011-02-12 20:01:30Z jonasbn $
+# $Id$
 
 use strict;
 use warnings;

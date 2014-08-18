@@ -1,7 +1,5 @@
 package Data::FormValidator::Constraints::Business::DK::FI;
 
-# $Id: FI.pm 7616 2011-04-22 07:23:26Z jonasbn $
-
 use strict;
 use warnings;
 use vars qw(@ISA $VERSION @EXPORT_OK);
@@ -16,7 +14,7 @@ use base 'Exporter';
 use constant VALID   => 1;
 use constant INVALID => undef;
 
-$VERSION = '0.01';
+$VERSION = '0.07';
 
 sub valid_fi {
     return sub {
@@ -255,21 +253,19 @@ Please see the distribution F<TODO> file also and the distribution road map at:
 =item * L<Business::DK::Phonenumber>
 
 =back
-  
+
 =head1 AUTHOR
 
 Jonas B. Nielsen, (jonasbn) - C<< <jonasbn@cpan.org> >>
 
 =head1 COPYRIGHT
 
-Business-DK-FI and related is (C) by Jonas B. Nielsen, (jonasbn) 2009-2011
+Business-DK-FI and related is (C) by Jonas B. Nielsen, (jonasbn) 2009-2014
 
 =head1 LICENSE
 
-Business-DK-FI and related is released under the artistic license
+Business-DK-FI and related is released under the Artistic License 2.0
 
-The distribution is licensed under the Artistic License, as specified
-by the Artistic file in the standard perl distribution
-(http://dev.perl.org/licenses/artistic.html).
+See the included license file for details
 
 =cut

@@ -1,7 +1,5 @@
 package Business::DK::FI;
 
-# $Id: FI.pm 8172 2013-07-31 16:45:55Z jonasbn $
-
 use strict;
 use warnings;
 use vars qw($VERSION @EXPORT_OK);
@@ -9,8 +7,9 @@ use Params::Validate qw(validate_pos SCALAR ARRAYREF);
 use Readonly;
 use base qw(Exporter);
 use English qw( -no_match_vars );
+use 5.005.03; 
 
-$VERSION   = '0.06';
+$VERSION   = '0.07';
 @EXPORT_OK = qw(validate validateFI generate);
 
 use constant MODULUS_OPERAND => 10;
@@ -124,18 +123,18 @@ The documentation describes version 0.02
 =head1 SYNOPSIS
 
     use Business::DK::FI qw(validate validateFI generate);
-    
+
     if (validate('026840149965328')) {
         print "026840149965328 is valid\n";
     }
-    
-    
+
+
     my $fi_number = generate(1);
-    
+
     if ($fi_number eq '000000000000018') {
         print "we have a FI number\n";
     }
-    
+
 
 =head1 DESCRIPTION
 
@@ -303,14 +302,12 @@ Jonas B. Nielsen, (jonasbn) - C<< <jonasbn@cpan.org> >>
 
 =head1 COPYRIGHT
 
-Business-DK-FI and related is (C) by Jonas B. Nielsen, (jonasbn) 2009-2011
+Business-DK-FI and related is (C) by Jonas B. Nielsen, (jonasbn) 2009-2014
 
 =head1 LICENSE
 
-Business-DK-FI and related is released under the artistic license
+Business-DK-FI and related is released under the Artistic License 2.0
 
-The distribution is licensed under the Artistic License, as specified
-by the Artistic file in the standard perl distribution
-(http://dev.perl.org/licenses/artistic.html).
+See the included license file for details
 
 =cut

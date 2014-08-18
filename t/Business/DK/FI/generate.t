@@ -1,4 +1,4 @@
-# $Id: generate.t 7812 2011-11-23 08:02:38Z jonasbn $
+# $Id$
 
 use strict;
 use warnings;

@@ -6,7 +6,7 @@
 
 # $Id: critic.t 7555 2011-04-08 19:49:43Z jonasbn $
 
-# $HeadURL: https://logiclab.jira.com/svn/BDKFI/trunk/t/critic.t $
+# $HeadURL$
 
 use strict;
 use warnings;

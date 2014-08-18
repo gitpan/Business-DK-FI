@@ -1,7 +1,5 @@
 package Class::Business::DK::FI;
 
-# $Id: FI.pm 7616 2011-04-22 07:23:26Z jonasbn $
-
 use strict;
 use warnings;
 use Class::InsideOut qw( private register id );
@@ -11,7 +9,7 @@ use Try::Tiny;
 
 use Business::DK::FI qw(validateFI);
 
-our $VERSION = '0.01';
+our $VERSION = '0.07';
 
 private number => my %number;    # read-only accessor: number()
 
@@ -81,22 +79,22 @@ The documentation describes version 0.01
 =head1 SYNOPSIS
 
     use Class::Business::DK::FI;
-    
+
     my $FI = Class::Business::DK::FI->new('026840149965328');
-    
-    
+
+
     #accessors
     my $fi_number = $FI->number();
-    
+
     my $fi_number = $FI->get_number();
 
     #mutators
     my $fi_number = $FI->number('026840149965328')
         or die "Unable to set number\n";
-    
+
     my $fi_number = $FI->get_number('026840149965328')
         or die "Unable to set number\n";
-    
+
 =head1 DESCRIPTION
 
 This is an OOP implementation for handling FI numbers. The class gives you an FI number object, which is validated according to the FI specification, see: L<Business::DK::FI>.
@@ -234,14 +232,12 @@ Jonas B. Nielsen, (jonasbn) - C<< <jonasbn@cpan.org> >>
 
 =head1 COPYRIGHT
 
-Business-DK-FI and related is (C) by Jonas B. Nielsen, (jonasbn) 2009-2011
+Business-DK-FI and related is (C) by Jonas B. Nielsen, (jonasbn) 2009-2014
 
 =head1 LICENSE
 
-Business-DK-FI and related is released under the artistic license
+Business-DK-FI and related is released under the Artistic License 2.0
 
-The distribution is licensed under the Artistic License, as specified
-by the Artistic file in the standard perl distribution
-(http://dev.perl.org/licenses/artistic.html).
+See the included license file for details
 
 =cut
